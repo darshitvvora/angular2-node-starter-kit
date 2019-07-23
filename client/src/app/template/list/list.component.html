@@ -1,0 +1,9 @@
+<mat-list>
+  <h3 mat-subheader>{{label}}</h3>
+  <a *ngFor="let template of templates"
+     mat-list-item
+     [routerLink]="['/template/', template.id]"
+     >
+    <h4 mat-line>{{template.name}}</h4>
+  </a>
+</mat-list>

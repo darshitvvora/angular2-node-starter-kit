@@ -1,0 +1,44 @@
+.mat-sidenav-container {
+  height: 100%;
+}
+
+$sidenav-width: 240px; // 240px;
+
+.mat-sidenav {
+  width: $sidenav-width;
+}
+
+.toolbar-title {
+  margin: 0 16px 0 16px;
+}
+
+.mat-subheader {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.app-nav-list-icon {
+  margin: 0 12px 0 12px;
+}
+
+
+app-navigation-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+}
+
+
+.app-navigation-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+}
+
+.sidenavContent {
+  margin-top: 64px;
+}

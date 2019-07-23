@@ -1,0 +1,8 @@
+<app-dynamic-variable (addDynamicVariable)='addVariableInTemplate($event)'></app-dynamic-variable>
+<section>
+  <form [formGroup]="editorForm" (ngSubmit)="submit()">
+    <quill-editor formControlName="editor" (onEditorCreated)="editorCreated($event)" #quillref></quill-editor>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+</section>

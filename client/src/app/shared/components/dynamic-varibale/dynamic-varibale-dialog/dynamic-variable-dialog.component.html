@@ -1,0 +1,16 @@
+<div mat-dialog-content>
+  <mat-list role="list">
+    <mat-list-item role="listitem" *ngFor="let variable of dialogData.variables" (click)="selectVariable(variable)">
+      {{variable.name}}
+    </mat-list-item>
+  </mat-list>
+  <button mat-button color="primary" (click)="toggleNew()">New</button>
+  <span>{{showNewInputField}}</span>
+  <form *ngIf="showNewInputField">
+    <mat-form-field>
+      <mat-label>First name</mat-label>
+      <input type="text" matInput name="variableName" [(ngModel)]="variableName"/>
+    </mat-form-field>
+    <button mat-raised-button type="button" (click)="addVariable()">Add</button>
+  </form>
+</div>
